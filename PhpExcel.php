@@ -12,7 +12,13 @@ class PhpExcel extends Component {
 		if (! isset ( $this->_phpexcel )) {
 			$this->_phpexcel = new \PHPExcel ();
 		}
-		return $this->_phpexcel ;
+		return $this->_phpexcel;
+
+	}
+
+	public function getInstance() {
+		return $this->createInstance ();
+
 	}
 
 }
